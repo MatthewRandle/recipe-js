@@ -138,6 +138,7 @@ function renderRecipe() {
         servings = e.target.value;
         if(showingIngredients) renderIngredients(); //if we are currently viewing ingredients, update them now
     }
+    servingsInput.min = 0;
     servingsInputContainer.appendChild(servingsInput);
 
     let recipeImage = document.getElementById("recipe_image");
