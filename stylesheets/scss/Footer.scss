@@ -1,0 +1,67 @@
+@import "_variables";
+
+.footer_container {
+    width: 100%;
+    height: 100px;
+    background-color: $darkGray;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include phone-down() {
+        height: 150px;
+    }
+}
+
+.footer {
+    width: 1200px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include desktop-down() {
+        width: 100%;
+    }
+
+    @include tablet-down() {
+        padding-left: 20px;
+        padding-right: 20px;
+        flex-direction: column;
+    }
+}
+
+.footer h2,
+.footer a {
+    color: white;
+}
+
+.footer h2 span {
+    color: $orange;
+}
+
+.footer_legal  {
+    @include tablet-down() {
+        margin-top: 10px;
+    }
+
+    @include phone-down() {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.footer_legal a {
+    margin-left: 20px;
+
+    @include tablet-down() {
+        margin-left: 10px;
+    }
+
+    @include phone-down() {
+        margin-top: 5px;
+    }
+}

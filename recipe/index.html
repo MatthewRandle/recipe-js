@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
+
+    <link href="../stylesheets/css/Reset.css" type="text/css" rel="stylesheet" />
+    <link href="../stylesheets/css/Navbar.css" type="text/css" rel="stylesheet" />
+    <link href="../stylesheets/css/Footer.css" type="text/css" rel="stylesheet" />
+    <link href="../stylesheets/css/Recipe.css" type="text/css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@800&display=swap"
+        rel="stylesheet">
+    </link>
+</head>
+
+<body>
+    <div style="display: flex; flex-direction: column; align-items: center;">
+        <nav class="navbar_container">
+            <div class="navbar">
+                <a href="/">
+                    <h2>recipe<span>randle</span></h2>
+                </a>
+            </div>
+        </nav>
+
+        <div class="recipe">
+            <div class="recipe_hero">
+                <div class="recipe_hero_content">
+                    <div id="recipe_info" class="recipe_hero_info">
+                        <div id="servingsContainer" class="recipe_hero_info_row">
+                            <label>Serving</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="recipe_image" class="recipe_hero_image"></div>
+            </div>
+
+            <div class="recipe_content_container">
+                <div id="recipe_topBar" class="recipe_content_topBar">
+                    <button id="ingredientButton" class="recipe_content_topBar--chosen" onclick="toggleView(event)">Ingredients</button>
+                    <button id="directionButton" onclick="toggleView(event)">Directions</button>
+                </div>
+
+                <div id="recipe_content" class="recipe_content">
+                    
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer_container">
+            <div class="footer">
+                <h2>recipe<span>randle</span></h2>
+
+                <div class="footer_legal">
+                    <a href="/">Privacy Policy</a>
+                    <a href="/">Terms and conditions</a>
+                    <a href="/">Cookie Policy</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../js/fraction.js"></script>
+    <script src="../js/recipes.js"></script>
+    <script src="../js/recipe.js"></script>
+</body>
+
+</html>
